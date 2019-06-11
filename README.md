@@ -4,19 +4,18 @@ In the previous unit, we used validations and forms to create a management
 dashboard for songs and artists. Now we're ready to start connecting those
 models and using their relationships to display more interesting data.
 
-- In the controllers, this lab will require you to write `show` and `index`
-  actions for both `Song` and `Artist`.
+<!-- - In the controllers, this lab will require you to write `show` and `index` actions for both `Song` and `Artist`. -->
 
-- You'll need to add a foreign key by writing your own migration.
+<!-- - You'll need to add a foreign key by writing your own migration. -->
 
-- You'll need to set up the association in the model classes.
+<!-- - You'll need to set up the association in the model classes. -->
 
-- You'll need to format and link to the songs and artists according to the
-  specs.
+- You'll need to format and link to the songs and artists according to the specs.
 
-Additionally, you'll find that the specs require two special methods,
-`Artist#song_count` and `Song#artist_name`. These methods are meant to protect
-the views from complexity that belongs in the model.
+<!-- Additionally, you'll find that the specs require two special methods:
+(1) `Artist#song_count` 
+(2) `Song#artist_name`
+These methods are meant to protect the views from complexity that belongs in the model. -->
 
 They are also a great example of a software design principle called the
 [Law of Demeter][demeter], which is sometimes called the "one dot" rule in
