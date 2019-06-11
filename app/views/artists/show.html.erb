@@ -1,0 +1,10 @@
+<h1><%= @artist.name %></h1>
+<h3><%= @artist.song_count %> songs</h3>
+
+<ul>
+<li>
+<% @artist.songs.map do |song| %>
+    <%= link_to song.title, song %>
+<% end %>
+</li>
+</ul>
