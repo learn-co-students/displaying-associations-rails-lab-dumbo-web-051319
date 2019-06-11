@@ -1,0 +1,19 @@
+<h1>𝄞 <%= @artist.name %>'s Songs! 𝄞</h1>
+
+<h4>🔽 Sick Beats 🔽</h4>
+<ul>
+  <% @songs.each do |song| %>
+    <li>
+      <%= link_to song.title, song%>
+    </li>
+    <% end %>
+</ul>
+
+<h4>Count: </h4>
+<p>
+  <% if @artist.song_count == 1  %>
+    1 song
+  <% else  %>
+    <%= @artist.song_count %> songs
+  <% end  %>
+</p>
